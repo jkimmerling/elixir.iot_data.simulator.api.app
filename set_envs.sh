@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export NUMBER_OF_POINTS=2000
+export POINT_PREFIX="800"
+export PORT_NUMBER=8008
