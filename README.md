@@ -51,11 +51,11 @@ Steps to run it via `iex`:
 
 The endpoint is simple, you only need to add the fake "device name" to the end of the url.
 
-For example, if you want readings for `fake_device_1`, and the container is accessable at `172.20.0.2` with a port of `8008`, 
-you would hit the endpoint like this:
-`curl 172.20.0.2:8008/fake_device_1`
-
-The result should be similar to:
+For example, if you want readings for `fake_device_1`, and the container is accessable at `172.20.0.2` with a port of `8008`,  
+you would hit the endpoint like this:  
+`curl 172.20.0.2:8008/fake_device_1`  
+  
+The result should be similar to:  
 ```
 {"test":[{"device":"point_1","reading":"87","time":"2023-11-27 15:54:01.265694Z"},{"device":"point_2","reading":"56","time":"2023-11-27 15:54:01.265710Z"},{"device":"point_3","reading":"80","time":"2023-11-27 15:54:01.265715Z"},{"device":"point_4","reading":"94","time":"2023-11-27 15:54:01.265718Z"},{"device":"point_5","reading":"94","time":"2023-11-27 15:54:01.265720Z"}...]}
 ```
