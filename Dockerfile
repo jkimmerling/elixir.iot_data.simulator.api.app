@@ -27,9 +27,6 @@ RUN apk update && \
   mix local.rebar --force && \
   mix local.hex --force
 
-# This copies our app source code into the build container
-COPY . .
-
 RUN mix do deps.get, deps.compile ranch --force, compile
 
 RUN \
