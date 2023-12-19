@@ -15,6 +15,10 @@ ENV APP_NAME=${APP_NAME} \
 # By convention, /opt is typically used for applications
 WORKDIR /opt/app
 
+# This copies our app source code into the build container
+COPY . .
+
+
 # This step installs all the build tools we'll need
 RUN apk update && \
   apk upgrade --no-cache && \
